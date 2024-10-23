@@ -1,0 +1,51 @@
+
+// form
+.form {
+
+    &-content {
+        position: relative;
+        width: 100%;
+
+        &-container {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+    }
+    &-label {
+        position: absolute;
+        left: 1.5rem;
+        top: -.5rem;
+        background: $tertiary;
+        padding: 0 .5rem;
+    }
+    &-input {
+        width: 100%;
+        padding: .8rem 2.5rem;
+        border: 1px solid #bdbebd;
+        border-radius: 2rem;
+        outline: none;
+        font-size: 1rem;
+        color: $primary;
+        margin: .2rem 0 1rem 0;
+        background: transparent;
+    }
+    &-textarea {
+        height: 20vh;
+    }
+    &-icon {
+        position: absolute;
+        top: 1rem;
+        left: .9rem;
+    }
+    &-btn {
+        width: 100%;
+        padding: .9rem;
+        font-size: 1rem;
+        border: none;
+        color: $tertiary;
+        background: linear-gradient(to right, #3d426b, $primary);
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+}

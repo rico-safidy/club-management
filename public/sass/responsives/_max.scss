@@ -1,0 +1,371 @@
+// Tablet
+@media screen and (max-width: 768px) {
+    html {font-size: 80%;}
+    // nav
+    .nav {
+        &-item {
+            &-content {
+                flex-direction: column;
+                background: #05161ae3;
+                height: 100vh;
+                width: 13rem;
+                padding: 3rem 0;
+                position: absolute;
+                top: 0;
+                left: -15rem;
+                transition: .5s;
+            }
+            &-content a {
+                text-align: left;
+                width: 100%;
+            }
+        }
+        &-link {
+            &-btn {
+                &-menu {
+                    display: block;
+
+                    &-close {
+                        display: block;
+                        position: absolute;
+                        top: .5rem;
+                        right: 1rem;
+                        cursor: pointer;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    // header
+    .header {
+        &-main {
+            &-btns {
+                bottom: 8rem;
+            }
+        }
+    }
+    // palmares
+    .palmares {
+        overflow: hidden;
+        &-content {
+            flex-direction: column;
+        }
+        &-desc{
+            &-img {
+                bottom: 0;
+            }
+        }
+    }
+    // donate
+    .donate {
+        &-main {
+            flex-direction: column;
+        }
+    }
+    .donate-checkout {
+        padding-top: 6rem;
+    }
+    .team {
+        padding: 4rem 2rem;
+    }
+    //match-detail
+    .match {
+        &-content {
+            &-item {
+                &-container {
+                    padding-bottom: 2.5rem;
+                    position: relative;
+                    &-para {
+                        position: absolute;
+                        bottom: 0;
+                    }
+                    &-line {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+    // shop
+    .shop {
+        &-nav {
+            padding: 0 4rem;
+        }
+        &-main {
+            &-desc {
+                flex-direction: column;
+            }
+        }
+    }
+    .collection-detail {
+        &-content {
+            &-container {
+                flex-direction: column;
+
+                &-img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // contact
+    .contact {
+        flex-direction: column;
+        gap: 2rem;
+
+        &-desc {
+            text-align: left;
+        }
+    }
+    .profile {
+        flex-direction: column;
+    }
+    // checkout
+    .checkout {
+        &-main {
+            &-form {
+                &-card {
+                    &-content {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    .form {
+        &-content {
+            &-container {
+                flex-direction: column;
+            }
+        }
+    }
+    // dashboard
+    //left nav
+    .dashboard {
+        &-header {
+            &-content {
+                &-left {
+                    &-icon {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &-left-nav {
+            position: absolute;
+            top: 0;
+            left: -15rem;
+            z-index: 1;
+            height: 100%;
+            width: 15rem;
+            background: $tertiary;
+            padding: 2.5rem 0;
+            transition: .5s;
+
+            &-list {
+                &-icon {
+                    display: block;
+                }
+            }
+        }
+        &-main {
+            &-content {
+                &-main {
+                    &-list {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+            }
+        }
+    }
+    #home-link-header {
+        display: none;
+    }
+    // team
+    .team {
+        &-add {
+            &-main {
+                &-content {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+// mobole L
+@media  screen and (max-width: 425px) {
+    html {
+        font-size: 90%;
+    }
+    // nav
+    .nav {
+        &-list {
+            padding: 0 1rem;
+        }
+    }
+    .header {
+        padding: 4rem 1rem;
+        &-desc {
+            text-align: start;
+            padding: 0 1rem;
+        }
+        &-content {
+            padding: 0;
+
+            &-image {
+                height: 60vw;
+            }
+        }
+        &-main {
+            padding: 1rem 0;
+
+            &-btns {
+                bottom: 12rem;
+            }
+        }
+    }
+    .actu {
+        &-header {
+            padding: 5rem 1rem 2rem 1rem;
+        }
+    }
+    .game {
+        padding: 2rem 1rem;
+    }
+    .palmares {
+        padding: 2rem 1rem;
+        &-desc {
+            &-img {
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .donate {
+        padding: 2rem 1rem;
+    }
+    .donate-checkout {
+        padding: 6rem 1rem 2rem 1rem;
+        &-main {
+            width: 100%;
+        }
+    }
+    .shop-home {
+        padding: 2rem 1rem;
+        &-main{
+            &-link {
+                height: 60vw;
+            }
+        }
+    }
+    .team {
+        padding: 4rem 1rem;
+        &-detail {
+            padding: 7rem 1rem;
+            &-content {
+                flex-direction: column;
+            }
+        }
+    }
+    .match {
+        padding: 6rem 2rem;
+    }
+    .shop {
+        &-nav {
+            padding: 0 1rem;
+        }
+        &-header {
+            padding: 0;
+            &-desc {
+                left: 1rem;
+            }
+        }
+        &-main {
+            padding: 8rem 1rem 2rem 1rem;
+
+            &-tab {
+                flex-direction: column;
+            }
+        }
+    }
+    .collection {
+        padding: 2rem 1rem;
+        &-content {
+            &-list {
+                grid-template-columns: repeat(1, 1fr);
+                &-item {
+                    &-desc {
+                        padding: .5rem;
+                        flex-direction: column;
+                        gap: .5rem;
+                    }
+                }
+            }
+        }
+        &-detail {
+            padding: 9rem 1rem 2rem 1rem;
+        }
+    }
+    .contact {
+        padding: 4rem 1rem;
+    }
+    .profile {
+        padding: 6rem 1rem;
+    }
+    .login {
+        padding: 8rem 1rem;
+    }
+    .checkout {
+        &-title {
+            width: 100%;
+            margin: 0 1rem;
+        }
+        &-header {
+            &-content {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+        &-main {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+    .team-add {
+        &-form {
+            &-img {
+                &-content {
+                    display: none;
+                }
+            }
+        }
+    }
+    .dashboard {
+        &-main {
+            overflow: auto;
+        }
+    }
+    .actuality {
+        &-table {
+            width: 400px;
+        }
+    }
+}
+// mobile M
+@media screen and (max-width: 375px) {
+    html {font-size: 100%;}
+    .header {
+        &-desc {
+            padding: 0 1rem;
+        }
+    }
+    .shop {
+        &-main {
+            padding: 9rem 1rem 1rem 1rem;
+        }
+    }
+    .match {
+        padding: 6rem 1rem;
+    }
+}

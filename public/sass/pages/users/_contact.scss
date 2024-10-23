@@ -1,0 +1,40 @@
+.contact {
+    background: $tertiary;
+    padding: 4rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+
+    &-content {
+        flex: 1;
+    }
+
+    &-desc {
+        text-align: center;
+
+        &-item {
+            margin: 1rem 0;
+            &-icon {
+                font-size: 1.5rem;
+            }
+        }
+        &-link {
+            color: $primary;
+
+            &-icon {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &-title {
+        text-align: start;
+    }
+    &-input {
+        border-radius: .5rem;
+    }
+    &-btn {
+        border-radius: .5rem;
+    }
+}

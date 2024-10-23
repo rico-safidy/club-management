@@ -1,0 +1,103 @@
+.ticket-detail {
+    padding: 4rem 0 0 0;
+    &-main {
+        background: url('/images/vue-generative-du-stade-football-haut_784584-4672.jpg');
+        background-size: cover;
+        background-position: center;
+
+        &-list {
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+
+            &-img {
+                position: absolute;
+                width: 100%;
+            }
+            &-item {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #e5e5e62a;
+                padding: 2rem;
+                width: 400px;
+                border-radius: 1rem;
+                backdrop-filter: blur(2px);
+                border: 1px solid #e5e5e675;
+
+                &-main {
+                    &-subtitle {
+                        margin-top: .5rem;
+                    }
+                    &-radio {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 1rem !important;
+                        color: $tertiary;
+                        transition: .3s;
+                    }
+                    &-radio:hover {
+                        text-decoration: underline;
+                    }
+
+                    &-number {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 1rem;
+                        margin: .5rem 1rem;
+                        background: $tertiary;
+                        width: 200px;
+                        border-radius: .7rem;
+
+                        &-btn {
+                            width: 3rem;
+                            height: 3rem;
+                            font-size: 1.5rem;
+                            border: none;
+                            cursor: pointer;
+                            color: $primary;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: $tertiary;
+                            border-radius: .7rem;
+                            transition: .3s;
+                        }
+                        &-btn::selection {
+                            display: none;
+                        }
+                    }
+                }
+                &-footer {
+                    &-btn {
+                        display: flex;
+
+                        &-icon {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#increment:hover {
+    background: #c2c2c2;
+}
+#increment:active {
+    background: $primary;
+    color: $tertiary;
+}
+#decrement:hover {
+    background: #c2c2c2;
+}
+#decrement:active {
+    background: $primary;
+    color: $tertiary;
+}

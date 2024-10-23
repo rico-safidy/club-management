@@ -1,0 +1,222 @@
+.dashboard {
+    min-height: 88vh;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $tertiary;
+        padding: .5rem 1rem;
+
+        &-content {
+            gap: .5rem;
+            background: #beccdf;
+            padding: .3rem .5rem;
+            border-radius: .5rem;
+
+            &-left {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                &-icon {
+                    cursor: pointer;
+                    color: $primary;
+                    font-size: 1.5rem;
+                    transition: .3s;
+                    display: none;
+                }
+                &-icon:hover {
+                    color: green;
+                }
+                &-link {
+                    color: green;
+                }
+            }
+        }
+        &-img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+        &-line {
+            border-bottom: none;
+            margin: .1rem 0;
+        }
+    }
+    &-left-nav {
+        background: $tertiary;
+        padding: 1rem;
+        margin: .5rem 0;
+        flex: 1;
+        position: relative;
+        height: 100%;
+
+        &-list {
+            &-icon {
+                position: absolute;
+                top: .5rem;
+                right: 1rem;
+                cursor: pointer;
+                display: none;
+            }
+            &-icon:hover {
+                color: #e23939;
+            }
+        }
+        &-link {
+            border: none;
+            background: none;
+            font-size: 1rem;
+            color: $primary;
+            padding: .7rem;
+            cursor: pointer;
+            width: 100%;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            transition: .3s;
+        }
+        &-link:hover {
+            background: $primary;
+            color: $tertiary;
+        }
+        .active {
+            background: $primary;
+            color: $tertiary;
+        }
+    }
+    &-dropdown {
+        position: relative;
+
+        &-indication {
+            position: absolute;
+            right: 1rem;
+            top: .8rem;
+            transition: .5s;
+        }
+        &-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        &-item {
+            padding: .7rem 1rem;
+        }
+        &-active {
+            background: $primary;
+            color: $tertiary;
+        }
+    }
+    &-main {
+        display: flex;
+        gap: .5rem;
+        height: 88vh;
+
+        &-content {
+            margin: .5rem 0;
+            background: $tertiary;
+            padding: 1rem;
+            flex: 5;
+            height: auto;
+
+            &-list {
+                display: flex;
+                flex-wrap: wrap;
+                background: #beccdf;
+                padding: 1rem;
+                gap: 1rem;
+            }
+            &-item {
+                background: $tertiary;
+                padding: .5rem;
+                border-radius: 1rem;
+                flex: 1;
+
+                &-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 1rem;
+
+                    &-icon {
+
+                        &-1 {
+                            border-radius: .5rem;
+                            color: $tertiary;
+                            padding: 1rem;
+                            background: #f44336;
+                        }
+                        &-2 {
+                            border-radius: .5rem;
+                            color: $tertiary;
+                            padding: 1rem;
+                            background: #009688f7;
+                        }
+                        &-3 {
+                            border-radius: .5rem;
+                            color: $tertiary;
+                            padding: 1rem;
+                            background: green;
+                        }
+                        &-4 {
+                            border-radius: .5rem;
+                            color: $tertiary;
+                            padding: 1rem;
+                            background: green;
+                        }
+                    }
+                }
+            }
+
+            &-main {
+                margin: 1rem 0;
+
+                &-list {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 2rem;
+
+                    &-item {
+
+                        &-content {
+                            background: $tertiary;
+                            box-shadow: 0px 1px 6px gray;
+                            border-radius: .7rem;
+                            overflow: hidden;
+                            margin: 0.5rem 0 1rem 0;
+                        }
+                        &-table {
+                            width: 100%;
+                            border-collapse: collapse;
+
+                            &-head {
+                                background: $primary;
+                                color: $tertiary;
+                                border-radius: .7rem .7rem 0 0;
+
+                                &-desc {
+                                    padding: .7rem .5rem;
+                                }
+                            }
+                            &-body {
+                                &-row:nth-child(odd) {
+                                    background: #d4d4d4;
+                                }
+                                &-desc {
+                                    padding: .6rem .5rem;
+                                }
+                            }
+                        }
+                        &-btn {
+                            background: $primary;
+                            padding: .6rem 1rem;
+                            color: $tertiary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

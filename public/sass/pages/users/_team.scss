@@ -1,0 +1,136 @@
+// team
+.team {
+    background: $primary;
+    padding: 5rem 6rem 2rem 6rem;
+    min-height: 100vh;
+
+    &-title {
+        color: $tertiary;
+    }
+    &-nav {
+        &-list {
+            display: flex;
+            justify-content: start;
+
+            &-item {
+                display: flex;
+                justify-content: start;
+                gap: .3rem;
+
+                &-btn {
+                    border: 1px solid $tertiary;
+                    border-radius: .6rem;
+                    padding: .7rem 1rem;
+                    font-size: 1rem;
+                    background: transparent;
+                    cursor: pointer;
+                    color: $tertiary;
+
+                    &-active {
+                        border: 1px solid $secondary;
+                        color: $secondary;
+                    }
+                }
+                &-btn:hover {
+                    border: 1px solid $secondary;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    &-card {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+        max-height: 400px;
+        overflow: hidden;
+        overflow-y: auto;
+        scrollbar-width: none;
+
+        &-main {
+            border: 1px solid #3d3d3d;
+            border-radius: 1.3rem;
+            padding: 1rem;
+            margin-top: .5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @keyframes fadeInTop {
+            from {
+                transform: translateY(2rem);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        &-content {
+            padding: 2rem 0;
+        }
+        &-item:first-child {
+            animation-duration: .5s;
+        }
+        &-item:nth-child(2) {
+            animation-duration: .9s;
+        }
+        &-item:nth-child(3) {
+            animation-delay: 1.3s;
+        }
+        &-item:nth-child(4) {
+            animation-delay: 1.8s;
+        }
+        &-item:nth-child(5) {
+            animation-delay: 2.2s;
+        }
+        &-item {
+            min-width: 10rem;
+            position: relative;
+            border-radius: .8rem;
+            transform: translateY(0);
+            opacity: 1;
+            animation: fadeInTop alternate;
+
+            &-img {
+                width: 100%;
+                aspect-ratio: 2/3;
+                border-radius: .8rem;
+                object-fit: cover;
+            }
+            &-desc {
+                padding: 1rem .5rem;
+                position: absolute;
+                bottom: 0;
+                background: linear-gradient(180deg, #00021100, #000211);
+                width: 100%;
+                border-radius: .8rem;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: .5rem;
+
+                &-content {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                &-title {
+                    font-size: 2.5rem;
+                    color: white;
+                }
+                &-subtitle {
+                    color: white;
+                }
+                &-para::first-letter {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    &-subtitle {
+        color: $tertiary;
+        padding: 0 0 .5rem;
+    }
+}

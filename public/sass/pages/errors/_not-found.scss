@@ -1,0 +1,26 @@
+.not-found {
+    height: 100vh;
+    background: url('/images/cable.png') no-repeat,url('/images/Animated\ Shape.svg');
+    // background-size: 40rem cover;
+    background-size: 40rem, cover;
+    background-position: left bottom,center;
+    position: relative;
+
+    &-desc {
+        position: absolute;
+        top: 50%;
+        right: 8rem;
+        transform: translateY(-50%);
+        text-align: center;
+
+        &-title {
+            font-size: 8rem;
+            background: linear-gradient(to top right, #ffffff, #002069);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &-para {
+            margin: 1rem 0 2rem 0;
+        }
+    }
+}

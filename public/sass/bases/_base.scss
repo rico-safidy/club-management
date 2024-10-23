@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+html {font-size: 100%;}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.title {
+    color: $tertiary;
+    font-size: 2rem;
+}
+.title-primary {
+    font-size: 2rem;
+    color: $primary;
+}
+.title-secondary {
+    font-size: 2rem;
+    color: $secondary;
+}
+.subtitle {
+    font-size: 1.2rem;
+    color: $tertiary;
+}
+.subtitle-primary {
+    font-size: 1.2rem;
+    color: $primary;
+}
+.subtitle-secondary {
+    font-size: 1.2rem;
+    color: $secondary;
+}
+.para {
+    font-size: 1rem;
+    color: $tertiary;
+}
+.para-primary {
+    font-size: 1rem;
+    color: $primary;
+}
+.para-secondary {
+    font-size: 1rem;
+    color: $secondary;
+}
+
+.btn {
+    border: none;
+    font-size: 1rem;
+    background: none;
+    cursor: pointer;
+    padding: .9rem 2rem;
+    border-radius: .5rem;
+    margin: .5rem 0;
+    transition: .3s;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    transition: .3s;
+}
+.btn:hover {
+    gap: .7rem;
+}
+.btn-primary {
+    background: $primary;
+    color: $tertiary;
+}
+.btn-primary:hover {
+    box-shadow: 0 0 16px #072f3fda;
+}
+.btn-tertiary {
+    background: $tertiary;
+    color: $primary;
+}
+.btn-primary:hover {
+    box-shadow: 0 0 16px #c7c7c7da;
+}
+.btn-border-primary {
+    border: 1px solid $primary;
+    color: $primary;
+}
+.btn-border-primary:hover {
+    background: $primary;
+    color: $tertiary;
+}

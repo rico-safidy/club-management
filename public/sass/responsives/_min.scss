@@ -1,0 +1,33 @@
+// laptop L
+@media screen and (min-width: 1200px) {
+    html { font-size: 100%; }
+}
+@media screen and (min-width: 1441px) {
+    html { font-size: 150%; }
+
+    .collection-content-list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@media screen and (min-width: 1464px) {
+
+    .collection-content-list {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+@media screen and (min-width: 1620px) {
+    html { font-size: 160%; }
+}
+@media screen and (min-width: 1787px) {
+    html { font-size: 160%; }
+}
+@media screen and (min-width: 1980px) {
+    html { font-size: 180%; }
+}
+@media screen and (min-width: 2440px) {
+    html { font-size: 200%; }
+
+    .collection-content-list {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}

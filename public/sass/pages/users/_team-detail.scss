@@ -1,0 +1,52 @@
+
+// team detail
+.team-detail {
+    background: $tertiary;
+    padding: 10rem 5rem;
+    min-height: 100vh;
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    &-img {
+        width: 15rem;
+        aspect-ratio: 1 / 1.5;
+        border-radius: .8rem;
+        box-shadow: 0px 3px 14px #00031abd;
+        object-fit: cover;
+    }
+    &-title {
+        font-size: 5rem;
+        color: $secondary;
+    }
+    &-desc-1 {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    &-desc {
+        &-subtitle, &-para {
+            color: $primary;
+        }
+        &-para::first-letter {
+            text-transform: uppercase;
+        }
+    }
+    &-desc-2 {
+        background: $primary;
+        padding: 1.5rem;
+        border-radius: .8rem;
+        margin-top: 1rem;
+
+        &-subtitle {
+            margin-bottom: .5rem;
+        }
+        &-para {
+            margin-bottom: .2rem;
+            font-size: .9rem;
+        }
+    }
+}

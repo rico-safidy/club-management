@@ -1,0 +1,104 @@
+.pieces-slider {
+	position: relative;
+	text-align: center;
+	padding: 3rem 0;
+}
+
+.js .pieces-slider {
+	padding: 0;
+}
+
+/* Make all slides absolutes and hide them */
+.js .pieces-slider__slide {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/* Define image dimensions and also hide them */
+.pieces-slider__image {
+	position: absolute;
+    border-radius: 1rem;
+}
+
+.js .pieces-slider__image {
+	visibility: hidden;
+}
+
+/* Hide the titles */
+.js .pieces-slider__text {
+	text-indent: -9999px;
+}
+
+/* Canvas with viewport width and height */
+.js .pieces-slider__canvas {
+	position: relative;
+	width: 100vw;
+	height: 90vh;
+	transition: 0.2s opacity;
+}
+
+/* Class for when we resize */
+.pieces-slider__canvas--hidden {
+	opacity: 0;
+	transition-duration: 0.3s;
+}
+
+/* Navigation buttons */
+.pieces-slider__button {
+	position: absolute;
+	left: 0;
+	top: 50%;
+    transform: translateY(-50%);
+	padding: 1.5rem;
+	margin: -25px 0 0 0;
+	background-color: #05161a;
+	color: #fff;
+	font-family: inherit;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	transition: 0.1s background-color;
+}
+
+.pieces-slider__button:hover {
+	background: #08252cda;
+}
+
+.pieces-slider__button--next {
+	left: auto;
+	right: 0;
+    border-radius: .5rem 0 0 .5rem;
+}
+.pieces-slider__button--prev {
+    border-radius: 0 .5rem .5rem 0;
+}
+
+/* Hide the buttons when no JS */
+.no-js .pieces-slider__button {
+	display: none;
+}
+
+/* Media queries with styles for smaller screens */
+@media screen and (max-width: 720px) {
+	.pieces-slider__image {
+		max-width: 100vw;
+	}
+}
+
+@media screen and (max-width: 55em) {
+	.pieces-slider__canvas {
+		width: 100vw;
+		height: 100vw;
+	}
+	.pieces-slider__button {
+		width: 60px;
+		height: 60px;
+	}
+}

@@ -1,0 +1,38 @@
+.donate-checkout {
+    min-height: 100vh;
+    position: relative;
+    background: $primary;
+    padding: 8rem 4rem 2rem 4rem;
+
+    &-main {
+        margin: auto;
+        max-width: 35rem;
+        background: $tertiary;
+        padding: 2rem;
+        border-radius: 1rem;
+
+        &-form {
+            &-btn {
+                display: flex;
+                align-items: center;
+
+                &-icon {
+                    transform: rotate(90deg);
+                }
+            }
+            &-footer {
+                &-icon {
+                    font-size: 3rem;
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+#charge-error {
+    color: red;
+}
+.hidden {
+    display: none;
+}

@@ -1,0 +1,12 @@
+.match-admin {
+    &-flex {
+        display: flex;
+        gap: .5rem;
+    }
+    &-main {
+        overflow: auto;
+    }
+    &-table {
+        width: 1050px;
+    }
+}

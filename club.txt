@@ -1,0 +1,23 @@
+stadium
+    * stadium name
+    * Location
+    * Number place
+
+
+Place in the stadium
+    * Total Number place
+    * Place Location
+        - Tribune Est
+        - Tribune Ouest
+        - Tribune Nord
+        - Gradain
+    * Place Number
+        - 200
+    * Place desc
+        - Entree principale n-3
+
+Ticket cart
+    * Match vs
+    * Ticket category
+    * Ticket qty
+    * Ticket price

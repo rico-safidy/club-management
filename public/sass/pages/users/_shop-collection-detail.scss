@@ -1,0 +1,35 @@
+.collection-detail {
+    min-height: 100vh;
+    padding: 9rem 4rem 2rem 4rem;
+    background: $primary;
+
+    &-content {
+        margin: auto;
+        max-width: 50rem;
+        background: $tertiary;
+        border-radius: 1.6rem;
+        border: 1px solid #aea7d5a1;
+
+        &-container {
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+
+            &-img {
+                width: 50%;
+                aspect-ratio: 2 / 2;
+                border-radius: 1rem;
+            }
+            &-desc {
+                flex: 3;
+
+                &-form {
+                    &-input {
+                        width: 50%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

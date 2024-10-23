@@ -1,0 +1,87 @@
+.checkout {
+    padding: 5rem 0;
+    min-height: 100vh;
+    margin: auto;
+
+    &-title {
+        width: 60%;
+        margin: auto;
+    }
+    &-header {
+        background: $tertiary;
+        margin: .5rem 0;
+
+        &-content {
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin: auto;
+        }
+    }
+
+    &-main {
+        width: 60%;
+        margin: auto;
+
+        &-subtitle {
+            margin-top: 1rem;
+        }
+        &-form {
+            &-input {
+                border-radius: .5rem;
+                padding: .8rem 2.5rem;
+            }
+            &-icon {
+                position: absolute;
+                top: .9rem;
+                left: .2rem;
+                padding: .8rem;
+                border-radius: .5rem 0 0 .5rem;
+            }
+            &-card {
+                margin: 1rem 0;
+                border-radius: 1rem;
+                border: 1px solid $tertiary;
+
+                &-header {
+                    background: $primary;
+                    border-radius: 1rem 1rem 0 0;
+                    padding: .2rem 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &-title {
+                        color: $tertiary;
+                    }
+                    &-icon {
+                        font-size: 3rem;
+                        color: blue;
+                    }
+                }
+                &-main {
+                    padding: 1rem;
+                    background: $tertiary;
+                    border-radius: 0 0 1rem 1rem;
+                }
+                &-content {
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+            &-tarif {
+                display: flex;
+                justify-content: space-between;
+                margin: 1rem 0;
+            }
+            &-btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

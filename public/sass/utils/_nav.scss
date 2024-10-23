@@ -1,0 +1,46 @@
+
+// Navbar
+.nav {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $primary;
+        padding: 0 4rem;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+    }
+    &-logo {
+        width: 2rem;
+    }
+    &-link {
+        padding: 1rem;
+        color: $tertiary;
+        transition: .3s;
+
+        &-btn {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+
+            &-menu {
+                cursor: pointer;
+                display: none;
+
+                &-close {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-link:hover {
+        color: $secondary
+    }
+}

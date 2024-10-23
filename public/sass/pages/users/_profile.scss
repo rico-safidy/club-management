@@ -1,0 +1,57 @@
+.profile {
+    min-height: 100vh;
+    background: $tertiary;
+    padding: 6rem 4rem;
+    display: flex;
+    gap: 2rem;
+
+    &-desc {
+        flex: 1;
+
+        &-title {
+            color: $primary;
+            font-size: 2rem;
+            margin-bottom: .5rem;
+        }
+        &-subtitle {
+            color: $primary;
+            margin-bottom: .3rem;
+        }
+        &-para {
+            color: $primary;
+            margin: .5rem 0;
+        }
+        &-line {
+            border: 1px solid #00031a5c;
+        }
+        &-content {
+            padding: .5rem;
+            background: #00042424;
+            border-radius: .5rem;
+        }
+        &-btns {
+            margin: 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 .5rem;
+        }
+        &-btn {
+            padding: .9rem 2rem;
+            background: linear-gradient(180deg, #00041abd, #00031a);
+            color: $tertiary;
+            border-radius: .6rem;
+        }
+        &-btn:last-child {
+            background: transparent;
+            border: 1px solid $primary;
+            color: $primary;
+        }
+    }
+    &-img {
+        width: 100%;
+        border-radius: 1rem;
+        &-content {
+            flex: 1;
+        }
+    }
+}

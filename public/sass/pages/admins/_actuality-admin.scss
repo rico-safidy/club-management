@@ -1,0 +1,88 @@
+.actuality {
+    padding: 1rem;
+    margin: .5rem 0 0 0;
+    background: $tertiary;
+    flex: 5;
+    height: 100%;
+    overflow: auto;
+
+    &-table {
+        width: 100%;
+        margin: .5rem 0;
+        text-align: left;
+        border: 1px solid #bdbdbd;
+        border-spacing: 0;
+
+        &-header th {
+            padding: 1rem;
+            font-size: 1rem;
+        }
+        &-header {
+            background: $primary;
+            color: $tertiary;
+        }
+        &-def:nth-child(even) {
+            background: #d6d5df;
+        }
+        &-def td {
+            padding: .5rem;
+            vertical-align: top;
+        }
+        &-def {
+            &-img {
+                max-width: 6rem;
+                aspect-ratio: 3 / 2;
+                border-radius: .4rem;
+                object-fit: fill;
+            }
+            &-content {
+                max-height: 3rem;
+                overflow: auto;
+                text-overflow: ellipsis;
+                scrollbar-width: none;
+            }
+            &-link {
+                border: 1px solid #1c33a1;
+                width: 2rem;
+                height: 2rem;
+                text-align: center;
+                padding-top: .4rem;
+                border-radius: .4rem;
+                color: $primary;
+                background: #7996ff;
+                transition: .3s;
+            }
+            &-link:hover {
+                background: $primary;
+                color: $tertiary;
+            }
+            &-btn {
+                padding-top: .2rem;
+                border: none;
+                font-size: 1rem;
+                border-radius: .4rem;
+                cursor: pointer;
+                background: #f18c8c;
+                color: #eb2424;
+                border: 1px solid #eb2424;
+                transition: .3s;
+                width: 2rem;
+                height: 2rem;
+                text-align: center;
+
+                &-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: .5rem;
+                }
+            }
+            &-btn:hover {
+                background: #f73636;
+                color: $tertiary;
+            }
+        }
+    }
+}
+// th:nth-child(2), td:nth-child(2) {
+//     width: 50%;
+// }

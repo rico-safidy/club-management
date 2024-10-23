@@ -1,0 +1,110 @@
+.ticket {
+    min-height: 100vh;
+    padding: 4rem 0;
+
+    &-header {
+        background: $tertiary;
+        padding: 1rem 5rem;
+        display: flex;
+        justify-content: space-between;
+
+        &-content {
+            display: flex;
+            gap: 1rem;
+
+            &-main {
+                text-align: end;
+
+                &-para {
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: end;
+                    align-items: center;
+                    font-size: .9rem;
+                    margin: .5rem;
+                }
+            }
+        }
+    }
+    &-main {
+        margin: 2rem 0;
+        padding: 0 5rem;
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            &-item {
+                background: $tertiary;
+                border-radius: 1rem;
+                overflow: hidden;
+                box-shadow: 0 5px 10px 0px #b9b9b9;
+                transition: .3s;
+
+                &-header {
+                    background: $primary;
+                    padding: 1rem 0;
+                }
+                &-subtitle {
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                &-title {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: .7rem 0;
+                }
+                &-line {
+                    border: 1px solid #c0c0c0;
+                }
+                &-main {
+                    padding: 0 1.5rem;
+
+                    &-icon {
+                        font-size: 1.5rem;
+                        color: $secondary;
+                        transform: translateX(-2rem);
+                        opacity: 0;
+                        transition: .3s;
+                    }
+                    &-para {
+                        margin: .6rem auto;
+                        color: #41414d;
+                        display: flex;
+                        align-items: center;
+                        align-items: start;
+                        gap: .5rem;
+                    }
+                }
+                &-footer {
+                    padding: 1rem;
+
+                    &-btn {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        opacity: .95;
+
+                        &-icon {
+                            transform: rotate(90deg);
+                        }
+                    }
+                    &-btn:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+            &-item:hover {
+                transform: scale(1.01);
+            }
+            &-item:hover &-item-main-icon {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            &-item:hover &-item-main-para {
+                color: $primary;
+            }
+        }
+    }
+}
