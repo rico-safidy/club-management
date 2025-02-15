@@ -1,7 +1,9 @@
+@use '../../utils/variable';
+
 .collection {
     min-height: 90vh;
     padding: 2rem 4rem;
-    background: $primary;
+    background: variable.$primary;
 
     &-title {
         margin: 1rem 0;
@@ -32,13 +34,13 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    background: $primary;
+                    background: variable.$primary;
                     padding: 1rem 1rem 0 1rem;
                     border-radius: 0 0 .5rem .5rem;
                 }
                 &-para {
                     padding: .2rem 1rem;
-                    color: $tertiary;
+                    color: variable.$tertiary;
                     opacity: 0;
                     transform: translateY(1rem);
                     transition: .3s;

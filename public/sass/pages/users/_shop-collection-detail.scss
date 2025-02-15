@@ -1,12 +1,14 @@
+@use '../../utils/variable';
+
 .collection-detail {
     min-height: 100vh;
     padding: 9rem 4rem 2rem 4rem;
-    background: $primary;
+    background: variable.$primary;
 
     &-content {
         margin: auto;
         max-width: 50rem;
-        background: $tertiary;
+        background: variable.$tertiary;
         border-radius: 1.6rem;
         border: 1px solid #aea7d5a1;
 

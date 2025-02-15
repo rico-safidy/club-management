@@ -1,3 +1,4 @@
+@use '../utils/variable';
 
 // form
 .form {
@@ -16,7 +17,7 @@
         position: absolute;
         left: 1.5rem;
         top: -.5rem;
-        background: $tertiary;
+        background: variable.$tertiary;
         padding: 0 .5rem;
     }
     &-input {
@@ -26,7 +27,7 @@
         border-radius: 2rem;
         outline: none;
         font-size: 1rem;
-        color: $primary;
+        color: variable.$primary;
         margin: .2rem 0 1rem 0;
         background: transparent;
     }
@@ -43,8 +44,8 @@
         padding: .9rem;
         font-size: 1rem;
         border: none;
-        color: $tertiary;
-        background: linear-gradient(to right, #3d426b, $primary);
+        color: variable.$tertiary;
+        background: linear-gradient(to right, #3d426b, variable.$primary);
         margin: 1rem 0;
         cursor: pointer;
     }

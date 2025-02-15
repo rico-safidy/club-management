@@ -1,3 +1,5 @@
+@use '../../utils/variable';
+
 .ticket-detail {
     padding: 4rem 0 0 0;
     &-main {
@@ -38,7 +40,7 @@
                         display: flex;
                         justify-content: space-between;
                         margin: 1rem !important;
-                        color: $tertiary;
+                        color: variable.$tertiary;
                         transition: .3s;
                     }
                     &-radio:hover {
@@ -51,7 +53,7 @@
                         justify-content: space-between;
                         gap: 1rem;
                         margin: .5rem 1rem;
-                        background: $tertiary;
+                        background: variable.$tertiary;
                         width: 200px;
                         border-radius: .7rem;
 
@@ -61,11 +63,11 @@
                             font-size: 1.5rem;
                             border: none;
                             cursor: pointer;
-                            color: $primary;
+                            color: variable.$primary;
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            background: $tertiary;
+                            background: variable.$tertiary;
                             border-radius: .7rem;
                             transition: .3s;
                         }
@@ -91,13 +93,13 @@
     background: #c2c2c2;
 }
 #increment:active {
-    background: $primary;
-    color: $tertiary;
+    background: variable.$primary;
+    color: variable.$tertiary;
 }
 #decrement:hover {
     background: #c2c2c2;
 }
 #decrement:active {
-    background: $primary;
-    color: $tertiary;
+    background: variable.$primary;
+    color: variable.$tertiary;
 }

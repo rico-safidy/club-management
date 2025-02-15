@@ -1,3 +1,5 @@
+@use '../utils/variable';
+
 // nav
 .nav {
     transition: .3s;
@@ -59,7 +61,7 @@
         }
         &-btn:last-child:hover {
             background: linear-gradient(180deg, #00041abd, #00031a);
-            color: $tertiary;
+            color: variable.$tertiary;
             border: none;
         }
     }

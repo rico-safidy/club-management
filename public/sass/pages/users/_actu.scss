@@ -1,8 +1,10 @@
+@use '../../utils/variable';
+
 .actu {
     &-header {
         width: 100%;
         padding: 5rem 6rem 1rem 6rem;
-        background: $tertiary;
+        background: variable.$tertiary;
         min-height: 100vh;
 
         &-img {
@@ -24,11 +26,11 @@
         }
         &-desc {
             &-title {
-                color: $primary;
+                color: variable.$primary;
                 margin: 0 0 1rem 0;
             }
             &-para {
-                color: $primary;
+                color: variable.$primary;
             }
         }
     }

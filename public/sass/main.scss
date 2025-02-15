@@ -1,37 +1,37 @@
-@import 'utils/variable';
-@import 'utils/nav';
-@import 'utils/form';
+@use 'utils/variable';
+@use 'utils/nav';
+@use 'utils/form';
 
-@import 'bases/base';
+@use 'bases/base';
 
-@import 'pages/users/home';
-@import 'pages/users/actu';
-@import 'pages/users/match';
-@import 'pages/users/ticket_shop';
-@import 'pages/users/ticket_detail';
-@import 'pages/users/team';
-@import 'pages/users/team-detail';
-@import 'pages/users/login';
-@import 'pages/users/contact';
-@import 'pages/users/profile';
-@import 'pages/users/shop';
-@import 'pages/users/shop_collection';
-@import 'pages/users/shop-collection-detail';
-@import 'pages/users/checkout';
-@import 'pages/users/donate_checkout';
-@import 'pages/users/ticket_cart';
+@use 'pages/users/actu';
+@use 'pages/users/checkout';
+@use 'pages/users/contact';
+@use 'pages/users/donate_checkout';
+@use 'pages/users/home';
+@use 'pages/users/login';
+@use 'pages/users/match';
+@use 'pages/users/profile';
+@use 'pages/users/shop-collection-detail';
+@use 'pages/users/shop';
+@use 'pages/users/shop_collection';
+@use 'pages/users/team-detail';
+@use 'pages/users/team';
+@use 'pages/users/ticket_cart';
+@use 'pages/users/ticket_detail';
+@use 'pages/users/ticket_shop';
 
-@import 'pages/admins/dashboard';
-@import 'pages/admins/user';
-@import 'pages/admins/team_admin';
-@import 'pages/admins/team-admin-add';
-@import 'pages/admins/actuality-admin';
-@import 'pages/admins/match_admin';
+@use 'pages/admins/actuality-admin';
+@use 'pages/admins/dashboard';
+@use 'pages/admins/match_admin';
+@use 'pages/admins/team-admin-add';
+@use 'pages/admins/team_admin';
+@use 'pages/admins/user';
 
-@import 'pages/errors/not-found';
+@use 'pages/errors/not-found';
 
-@import 'animations/hover';
-@import 'animations/animation';
+@use 'animations/animation';
+@use 'animations/hover';
 
-@import 'responsives/max';
-@import 'responsives/min';
+@use 'responsives/max';
+@use 'responsives/min';

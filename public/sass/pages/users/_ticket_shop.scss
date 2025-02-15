@@ -1,9 +1,11 @@
+@use '../../utils/variable';
+
 .ticket {
     min-height: 100vh;
     padding: 4rem 0;
 
     &-header {
-        background: $tertiary;
+        background: variable.$tertiary;
         padding: 1rem 5rem;
         display: flex;
         justify-content: space-between;
@@ -36,14 +38,14 @@
             gap: 1rem;
 
             &-item {
-                background: $tertiary;
+                background: variable.$tertiary;
                 border-radius: 1rem;
                 overflow: hidden;
                 box-shadow: 0 5px 10px 0px #b9b9b9;
                 transition: .3s;
 
                 &-header {
-                    background: $primary;
+                    background: variable.$primary;
                     padding: 1rem 0;
                 }
                 &-subtitle {
@@ -63,7 +65,7 @@
 
                     &-icon {
                         font-size: 1.5rem;
-                        color: $secondary;
+                        color: variable.$secondary;
                         transform: translateX(-2rem);
                         opacity: 0;
                         transition: .3s;
@@ -103,7 +105,7 @@
                 transform: translateX(0);
             }
             &-item:hover &-item-main-para {
-                color: $primary;
+                color: variable.$primary;
             }
         }
     }

@@ -1,3 +1,5 @@
+@use '../../utils/variable';
+
 .dashboard {
     min-height: 88vh;
 
@@ -5,7 +7,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: $tertiary;
+        background: variable.$tertiary;
         padding: .5rem 1rem;
 
         &-content {
@@ -21,7 +23,7 @@
 
                 &-icon {
                     cursor: pointer;
-                    color: $primary;
+                    color: variable.$primary;
                     font-size: 1.5rem;
                     transition: .3s;
                     display: none;
@@ -45,7 +47,7 @@
         }
     }
     &-left-nav {
-        background: $tertiary;
+        background: variable.$tertiary;
         padding: 1rem;
         margin: .5rem 0;
         flex: 1;
@@ -68,7 +70,7 @@
             border: none;
             background: none;
             font-size: 1rem;
-            color: $primary;
+            color: variable.$primary;
             padding: .7rem;
             cursor: pointer;
             width: 100%;
@@ -79,12 +81,12 @@
             transition: .3s;
         }
         &-link:hover {
-            background: $primary;
-            color: $tertiary;
+            background: variable.$primary;
+            color: variable.$tertiary;
         }
         .active {
-            background: $primary;
-            color: $tertiary;
+            background: variable.$primary;
+            color: variable.$tertiary;
         }
     }
     &-dropdown {
@@ -105,8 +107,8 @@
             padding: .7rem 1rem;
         }
         &-active {
-            background: $primary;
-            color: $tertiary;
+            background: variable.$primary;
+            color: variable.$tertiary;
         }
     }
     &-main {
@@ -116,7 +118,7 @@
 
         &-content {
             margin: .5rem 0;
-            background: $tertiary;
+            background: variable.$tertiary;
             padding: 1rem;
             flex: 5;
             height: auto;
@@ -129,7 +131,7 @@
                 gap: 1rem;
             }
             &-item {
-                background: $tertiary;
+                background: variable.$tertiary;
                 padding: .5rem;
                 border-radius: 1rem;
                 flex: 1;
@@ -144,25 +146,25 @@
 
                         &-1 {
                             border-radius: .5rem;
-                            color: $tertiary;
+                            color: variable.$tertiary;
                             padding: 1rem;
                             background: #f44336;
                         }
                         &-2 {
                             border-radius: .5rem;
-                            color: $tertiary;
+                            color: variable.$tertiary;
                             padding: 1rem;
                             background: #009688f7;
                         }
                         &-3 {
                             border-radius: .5rem;
-                            color: $tertiary;
+                            color: variable.$tertiary;
                             padding: 1rem;
                             background: green;
                         }
                         &-4 {
                             border-radius: .5rem;
-                            color: $tertiary;
+                            color: variable.$tertiary;
                             padding: 1rem;
                             background: green;
                         }
@@ -181,7 +183,7 @@
                     &-item {
 
                         &-content {
-                            background: $tertiary;
+                            background: variable.$tertiary;
                             box-shadow: 0px 1px 6px gray;
                             border-radius: .7rem;
                             overflow: hidden;
@@ -192,8 +194,8 @@
                             border-collapse: collapse;
 
                             &-head {
-                                background: $primary;
-                                color: $tertiary;
+                                background: variable.$primary;
+                                color: variable.$tertiary;
                                 border-radius: .7rem .7rem 0 0;
 
                                 &-desc {
@@ -210,9 +212,9 @@
                             }
                         }
                         &-btn {
-                            background: $primary;
+                            background: variable.$primary;
                             padding: .6rem 1rem;
-                            color: $tertiary;
+                            color: variable.$tertiary;
                         }
                     }
                 }

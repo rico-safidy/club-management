@@ -1,3 +1,5 @@
+@use '../utils/variable';
+
 // Tablet
 @media screen and (max-width: 768px) {
     html {font-size: 80%;}
@@ -159,7 +161,7 @@
             z-index: 1;
             height: 100%;
             width: 15rem;
-            background: $tertiary;
+            background: variable.$tertiary;
             padding: 2.5rem 0;
             transition: .5s;
 

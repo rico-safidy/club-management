@@ -1,7 +1,9 @@
+@use '../../utils/variable';
+
 .team-admin {
     margin-top: .5rem;
     flex: 5;
-    background: $tertiary;
+    background: variable.$tertiary;
     padding: 1rem;
     height: 100%;
 
@@ -24,28 +26,28 @@
 
             &-link {
                 display: inline-block;
-                color: $primary;
+                color: variable.$primary;
                 padding: .8rem 2.5rem;
                 width: 100%;
                 border-radius: .5rem;
                 transition: .3s;
             }
             &-link:hover {
-                background: $primary;
-                color: $tertiary;
+                background: variable.$primary;
+                color: variable.$tertiary;
             }
         }
     }
     &-link {
-        color: $primary;
-        border: 1px solid $primary;
+        color: variable.$primary;
+        border: 1px solid variable.$primary;
         padding: .6rem .8rem;
         border-radius: .5rem;
         transition: .3s;
     }
     &-link:hover {
         background: linear-gradient(to bottom, #222d5f, #00031a);
-        color: $tertiary;
+        color: variable.$tertiary;
     }
     &-img {
         width: 3rem;
@@ -71,8 +73,8 @@
     }
     &-btn {
         padding: 0 .8rem;
-        background: $primary;
-        color: $tertiary;
+        background: variable.$primary;
+        color: variable.$tertiary;
         font-size: 2rem;
         border-radius: .5rem;
     }
@@ -85,6 +87,6 @@
     background: gray;
 }
 .active {
-    color: $primary;
+    color: variable.$primary;
     font-weight: bold;
 }

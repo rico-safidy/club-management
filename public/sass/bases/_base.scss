@@ -1,8 +1,16 @@
+@use '../utils/variable';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu';
+    font-family: 'ubuntu', sans-serif;
+}
+
+@font-face{
+    font-family: 'ubuntu';
+    src: url('/fonts/Ubuntu-Light.ttf');
+    font-display: swap;
 }
 
 html {font-size: 100%;}
@@ -15,40 +23,40 @@ a {
 }
 
 .title {
-    color: $tertiary;
+    color: variable.$tertiary;
     font-size: 2rem;
 }
 .title-primary {
     font-size: 2rem;
-    color: $primary;
+    color: variable.$primary;
 }
 .title-secondary {
     font-size: 2rem;
-    color: $secondary;
+    color: variable.$secondary;
 }
 .subtitle {
     font-size: 1.2rem;
-    color: $tertiary;
+    color: variable.$tertiary;
 }
 .subtitle-primary {
     font-size: 1.2rem;
-    color: $primary;
+    color: variable.$primary;
 }
 .subtitle-secondary {
     font-size: 1.2rem;
-    color: $secondary;
+    color: variable.$secondary;
 }
 .para {
     font-size: 1rem;
-    color: $tertiary;
+    color: variable.$tertiary;
 }
 .para-primary {
     font-size: 1rem;
-    color: $primary;
+    color: variable.$primary;
 }
 .para-secondary {
     font-size: 1rem;
-    color: $secondary;
+    color: variable.$secondary;
 }
 
 .btn {
@@ -60,7 +68,6 @@ a {
     border-radius: .5rem;
     margin: .5rem 0;
     transition: .3s;
-    // display: flex;
     justify-content: center;
     align-items: center;
     gap: .3rem;
@@ -70,24 +77,24 @@ a {
     gap: .7rem;
 }
 .btn-primary {
-    background: $primary;
-    color: $tertiary;
+    background: variable.$primary;
+    color: variable.$tertiary;
 }
 .btn-primary:hover {
     box-shadow: 0 0 16px #072f3fda;
 }
 .btn-tertiary {
-    background: $tertiary;
-    color: $primary;
+    background: variable.$tertiary;
+    color: variable.$primary;
 }
 .btn-primary:hover {
     box-shadow: 0 0 16px #c7c7c7da;
 }
 .btn-border-primary {
-    border: 1px solid $primary;
-    color: $primary;
+    border: 1px solid variable.$primary;
+    color: variable.$primary;
 }
 .btn-border-primary:hover {
-    background: $primary;
-    color: $tertiary;
+    background: variable.$primary;
+    color: variable.$tertiary;
 }

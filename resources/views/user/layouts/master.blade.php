@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
     <link rel="stylesheet" href="{{ asset('css/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/swiper-style.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('css/base.css') }}">  --}}
     <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
     <script>
         document.documentElement.className = "js";

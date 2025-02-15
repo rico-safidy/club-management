@@ -1,9 +1,11 @@
+@use '../../utils/variable';
+
 .ticket-cart {
     padding: 4rem 0;
     min-height: 100vh;
 
     &-header {
-        background: $tertiary;
+        background: variable.$tertiary;
         padding: 1rem 5rem;
     }
     &-main {
@@ -16,12 +18,12 @@
                     border: 1px solid #bbbbbbd7;
                     overflow: hidden;
                     &-header {
-                        background: $tertiary;
+                        background: variable.$tertiary;
                         padding: .5rem;
                     }
                     &-main {
                         padding: .5rem;
-                        background: $primary;
+                        background: variable.$primary;
                         display: flex;
                         justify-content: space-between;
                     }

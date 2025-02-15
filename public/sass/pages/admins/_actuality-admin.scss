@@ -1,7 +1,9 @@
+@use '../../utils/variable';
+
 .actuality {
     padding: 1rem;
     margin: .5rem 0 0 0;
-    background: $tertiary;
+    background: variable.$tertiary;
     flex: 5;
     height: 100%;
     overflow: auto;
@@ -18,8 +20,8 @@
             font-size: 1rem;
         }
         &-header {
-            background: $primary;
-            color: $tertiary;
+            background: variable.$primary;
+            color: variable.$tertiary;
         }
         &-def:nth-child(even) {
             background: #d6d5df;
@@ -48,13 +50,13 @@
                 text-align: center;
                 padding-top: .4rem;
                 border-radius: .4rem;
-                color: $primary;
+                color: variable.$primary;
                 background: #7996ff;
                 transition: .3s;
             }
             &-link:hover {
-                background: $primary;
-                color: $tertiary;
+                background: variable.$primary;
+                color: variable.$tertiary;
             }
             &-btn {
                 padding-top: .2rem;
@@ -78,11 +80,8 @@
             }
             &-btn:hover {
                 background: #f73636;
-                color: $tertiary;
+                color: variable.$tertiary;
             }
         }
     }
 }
-// th:nth-child(2), td:nth-child(2) {
-//     width: 50%;
-// }

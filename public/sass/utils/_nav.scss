@@ -1,3 +1,5 @@
+@use '../utils/variable';
+@use '../bases/base';
 
 // Navbar
 .nav {
@@ -9,7 +11,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: $primary;
+        background: variable.$primary;
         padding: 0 4rem;
     }
     &-item {
@@ -21,7 +23,7 @@
     }
     &-link {
         padding: 1rem;
-        color: $tertiary;
+        color: variable.$tertiary;
         transition: .3s;
 
         &-btn {
@@ -41,6 +43,6 @@
         }
     }
     &-link:hover {
-        color: $secondary
+        color: variable.$secondary
     }
 }

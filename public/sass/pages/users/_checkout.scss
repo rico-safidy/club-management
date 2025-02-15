@@ -1,3 +1,5 @@
+@use '../../utils/variable';
+
 .checkout {
     padding: 5rem 0;
     min-height: 100vh;
@@ -8,7 +10,7 @@
         margin: auto;
     }
     &-header {
-        background: $tertiary;
+        background: variable.$tertiary;
         margin: .5rem 0;
 
         &-content {
@@ -42,10 +44,10 @@
             &-card {
                 margin: 1rem 0;
                 border-radius: 1rem;
-                border: 1px solid $tertiary;
+                border: 1px solid variable.$tertiary;
 
                 &-header {
-                    background: $primary;
+                    background: variable.$primary;
                     border-radius: 1rem 1rem 0 0;
                     padding: .2rem 1rem;
                     display: flex;
@@ -53,7 +55,7 @@
                     align-items: center;
 
                     &-title {
-                        color: $tertiary;
+                        color: variable.$tertiary;
                     }
                     &-icon {
                         font-size: 3rem;
@@ -62,7 +64,7 @@
                 }
                 &-main {
                     padding: 1rem;
-                    background: $tertiary;
+                    background: variable.$tertiary;
                     border-radius: 0 0 1rem 1rem;
                 }
                 &-content {

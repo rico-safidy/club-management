@@ -1,6 +1,8 @@
+@use '../../utils/variable';
+
 .profile {
     min-height: 100vh;
-    background: $tertiary;
+    background: variable.$tertiary;
     padding: 6rem 4rem;
     display: flex;
     gap: 2rem;
@@ -9,16 +11,16 @@
         flex: 1;
 
         &-title {
-            color: $primary;
+            color: variable.$primary;
             font-size: 2rem;
             margin-bottom: .5rem;
         }
         &-subtitle {
-            color: $primary;
+            color: variable.$primary;
             margin-bottom: .3rem;
         }
         &-para {
-            color: $primary;
+            color: variable.$primary;
             margin: .5rem 0;
         }
         &-line {
@@ -38,13 +40,13 @@
         &-btn {
             padding: .9rem 2rem;
             background: linear-gradient(180deg, #00041abd, #00031a);
-            color: $tertiary;
+            color: variable.$tertiary;
             border-radius: .6rem;
         }
         &-btn:last-child {
             background: transparent;
-            border: 1px solid $primary;
-            color: $primary;
+            border: 1px solid variable.$primary;
+            color: variable.$primary;
         }
     }
     &-img {

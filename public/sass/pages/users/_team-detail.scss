@@ -1,7 +1,8 @@
+@use '../../utils/variable';
 
 // team detail
 .team-detail {
-    background: $tertiary;
+    background: variable.$tertiary;
     padding: 10rem 5rem;
     min-height: 100vh;
 
@@ -20,7 +21,7 @@
     }
     &-title {
         font-size: 5rem;
-        color: $secondary;
+        color: variable.$secondary;
     }
     &-desc-1 {
         display: flex;
@@ -29,14 +30,14 @@
     }
     &-desc {
         &-subtitle, &-para {
-            color: $primary;
+            color: variable.$primary;
         }
         &-para::first-letter {
             text-transform: uppercase;
         }
     }
     &-desc-2 {
-        background: $primary;
+        background: variable.$primary;
         padding: 1.5rem;
         border-radius: .8rem;
         margin-top: 1rem;

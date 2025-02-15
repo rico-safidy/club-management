@@ -1,7 +1,9 @@
+@use '../../utils/variable';
+
 // header
 .header {
     padding: 4rem 2rem 0 2rem;
-    background: $primary;
+    background: variable.$primary;
     position: relative;
     overflow: hidden;
 
@@ -32,7 +34,7 @@
         }
         &-desc {
             border-radius: 80% 20% 77% 23% / 35% 62% 38% 65%;
-            background: $tertiary;
+            background: variable.$tertiary;
             padding: 5rem 2rem;
             flex: 1;
             display: flex;
@@ -78,8 +80,8 @@
 }
     }
     &-btn {
-        background: $primary;
-        color: $tertiary;
+        background: variable.$primary;
+        color: variable.$tertiary;
     }
     &-main {
         padding: 2rem 0 0 3rem;
@@ -161,7 +163,7 @@
     cursor: pointer;
 
     &-content {
-        background: $tertiary;
+        background: variable.$tertiary;
         width: 25rem;
         position: absolute;
         top: 0;
@@ -209,7 +211,7 @@
         }
         &-content {
             margin: .5rem 0;
-            background: $primary;
+            background: variable.$primary;
             border-radius: .5rem;
             padding: 1rem;
 
@@ -278,12 +280,12 @@
                             border: none;
                             border-radius: .6rem;
                             font-size: 1rem;
-                            color: $tertiary;
+                            color: variable.$tertiary;
                             width: 1.7rem;
                             height: 1.7rem;
                             text-align: center;
                             cursor: pointer;
-                            background: $secondary;
+                            background: variable.$secondary;
                             transition: .3s;
                         }
                         &-btn:hover {
@@ -299,7 +301,7 @@
         left: 0;
         bottom: 0;
         padding: 1rem 1rem 2rem 1rem;
-        background: $tertiary;
+        background: variable.$tertiary;
         width: 100%;
         border-radius: 0 0 0 2rem;
 
@@ -311,13 +313,13 @@
 
 // game
 .game {
-    background: $tertiary;
+    background: variable.$tertiary;
     padding: 2rem 5rem;
     overflow: hidden;
     position: relative;
 
     &-title {
-        color: $primary;
+        color: variable.$primary;
         text-align: center;
         margin-bottom: 2rem;
     }
@@ -337,7 +339,7 @@
                 justify-content: space-between;
                 gap: 1rem;
                 padding: 2rem 1.5rem;
-                background: $primary;
+                background: variable.$primary;
                 border-radius: 1rem 1rem 0 0;
             }
             &-content-2 {
@@ -354,25 +356,25 @@
                 }
             }
             &-subtitle, &-para {
-                color: $primary;
+                color: variable.$primary;
                 margin: 1rem 0;
             }
             &-link {
-                color: $secondary;
-                border: 1px solid $secondary;
+                color: variable.$secondary;
+                border: 1px solid variable.$secondary;
                 border-radius: .3rem;
                 transition: .3s;
                 padding: .3rem .5rem .2rem .2rem;
             }
             &-link:hover {
-                background: $secondary;
-                color: $tertiary;
+                background: variable.$secondary;
+                color: variable.$tertiary;
             }
         }
     }
 }
 .match-modal {
-    background: $tertiary;
+    background: variable.$tertiary;
     padding: .5rem 1rem;
     position: absolute;
     top: 8rem;
@@ -385,7 +387,7 @@
     &-content {
         &-btn {
             display: block;
-            color: $primary;
+            color: variable.$primary;
             border: 1px solid #b1b1b1;
             padding: .6rem 1rem;
             transition: .3s;
@@ -402,7 +404,7 @@
 
 // palmares
 .palmares {
-    background: $primary;
+    background: variable.$primary;
     padding: 2rem 5rem;
 
     &-content {
@@ -458,7 +460,7 @@
                 }
                 &-icon {
                     font-size: 2rem;
-                    color: $secondary;
+                    color: variable.$secondary;
                 }
                 &-title {
                     font-size: 2rem;
@@ -477,7 +479,7 @@
 // shop
 .shop-home {
     padding: 2rem 5rem;
-    background: $primary;
+    background: variable.$primary;
 
     &-main {
         &-link {
@@ -504,7 +506,7 @@
 // donate
 .donate {
     padding: 4rem 5rem;
-    background: $tertiary;
+    background: variable.$tertiary;
 
     &-main {
         display: flex;
@@ -522,7 +524,7 @@
             padding: 0 0 .5rem 0;
 
             &-header {
-                background: $primary;
+                background: variable.$primary;
                 padding: 1rem 2.5rem;
                 position: sticky;
                 top: 0;

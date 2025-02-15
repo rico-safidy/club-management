@@ -1,11 +1,13 @@
+@use '../../utils/variable';
+
 // team
 .team {
-    background: $primary;
+    background: variable.$primary;
     padding: 5rem 6rem 2rem 6rem;
     min-height: 100vh;
 
     &-title {
-        color: $tertiary;
+        color: variable.$tertiary;
     }
     &-nav {
         &-list {
@@ -18,22 +20,22 @@
                 gap: .3rem;
 
                 &-btn {
-                    border: 1px solid $tertiary;
+                    border: 1px solid variable.$tertiary;
                     border-radius: .6rem;
                     padding: .7rem 1rem;
                     font-size: 1rem;
                     background: transparent;
                     cursor: pointer;
-                    color: $tertiary;
+                    color: variable.$tertiary;
 
                     &-active {
-                        border: 1px solid $secondary;
-                        color: $secondary;
+                        border: 1px solid variable.$secondary;
+                        color: variable.$secondary;
                     }
                 }
                 &-btn:hover {
-                    border: 1px solid $secondary;
-                    color: $secondary;
+                    border: 1px solid variable.$secondary;
+                    color: variable.$secondary;
                 }
             }
         }
@@ -130,7 +132,7 @@
         }
     }
     &-subtitle {
-        color: $tertiary;
+        color: variable.$tertiary;
         padding: 0 0 .5rem;
     }
 }

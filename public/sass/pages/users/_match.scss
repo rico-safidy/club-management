@@ -1,3 +1,5 @@
+@use '../../utils/variable';
+
 .match {
     padding: 6rem 5rem;
     min-height: 100vh;
@@ -8,8 +10,8 @@
             margin-bottom: 1.5rem;
         }
         &-item {
-            background: $primary;
-            color: $tertiary;
+            background: variable.$primary;
+            color: variable.$tertiary;
             padding: 2rem;
             margin: 1rem 0;
             border-radius: 1rem;
@@ -21,7 +23,7 @@
                 align-items: center;
 
                 &-para {
-                    background: $secondary;
+                    background: variable.$secondary;
                     padding: .2rem .3rem;
                     border-radius: .4rem;
                 }
